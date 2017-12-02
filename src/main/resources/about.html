@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+
+    <style>
+        body {
+            background-color: #33373B;
+            color: #ecf0f1;
+            font-family: Roboto;
+            font-size: 24px;
+        }
+
+        img {
+            max-width: 100%;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+        }
+
+        ::-webkit-scrollbar {
+            height: 12px;
+            width: 12px;
+            background: #33373B;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #7f8c8d;
+            -webkit-border-radius: 1ex;
+            -webkit-box-shadow: 0px 1px 2px rgba(54, 55, 59, 0.75);
+        }
+        ::-webkit-scrollbar-corner {
+            background: #33373B;
+        }
+    </style>
+</head>
+<body style="background-color: #33373B">
+    <div>
+        <h2>About this game:</h2>
+        This game was created based on the requirement of the IT-Talents Code Competition 11/2017.
+        The goal was to develop a Tetris-like game in a scenario around the postman.
+
+        <h2>Features</h2>
+        <ul>
+            <li>Stunning flat design</li>
+            <li>Scoreboard</li>
+            <li>Different game modifications to make the game harder, than any Tetris was before</li>
+            <li>Customizable key bindings</li>
+        </ul>
+
+        <h2>Additional game modes</h2>
+        <h3>Priority mode</h3>
+        Each delivery gets one of three priorities (low, normal, high) assigned.
+        If the delivery has a low priority only, the player has to ensure, that the delivery doesn´t land on the
+        priority reserved right area of the trunk.
+        A high-priority delivery of an eagerly customer needs to be placed on the right side of the trunk, where the
+        postman can hand over the package faster, since its closer to the curbside.
+        A delivery with a normal priority can get placed anywhere.
+
+        <img src="images/about-page/priority-example.png" />
+
+        <h3>Balance mode</h3>
+        In the balance mode, each package has a specific weight. The players mission is to keep the balance of the
+        deliveries in the trunk in a specific range, indicated by the balance bar below the trunk.
+        If the trunk is too unbalanced, the deliveries would fall down and would possibly get damaged.
+        Customers would be unhappy if they get damaged deliveries. Post company don´t like unhappy
+        customers (usually).
+
+        <img src="images/about-page/balance-example.png" />
+
+        The indicator below is greyed out, if the minimum of parcels hasn´t been reached yet. In this case the
+        balance is not taken into account. If there is a minimum of parcels located in the trunk and they are too
+        unbalanced the game is over. The balance gets calculated using the percentage difference of the left and the
+        right side of the trunk.
+    </div>
+</body>
+</html>

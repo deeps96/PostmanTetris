@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="914.0" prefWidth="845.0" spacing="60.0" stylesheets="@/fxml/css/main.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.deeps.postman.app.controller.MainController">
+   <padding>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="100.0" />
+   </padding>
+   <children>
+      <Label styleClass="text" text="%applicationTitle">
+         <font>
+            <Font name="Roboto" size="64.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="80.0" />
+         </VBox.margin>
+      </Label>
+      <JFXButton fx:id="startNewGameButton" text="%startNewGame">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text" />
+            <String fx:value="menu-button" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="settingsButton" layoutX="305.0" layoutY="354.0" text="%settings">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text" />
+            <String fx:value="menu-button" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="aboutButton" layoutX="283.0" layoutY="548.0" text="%about">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text" />
+            <String fx:value="menu-button" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="exitButton" layoutX="342.0" layoutY="449.0" style="-fx-background-color: #9a8ad6;" text="%exit">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text" />
+            <String fx:value="menu-button" />
+         </styleClass>
+      </JFXButton>
+   </children>
+   <styleClass>
+      <String fx:value="vbox" />
+      <String fx:value="menu-vbox" />
+   </styleClass>
+</VBox>

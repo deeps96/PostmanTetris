@@ -1,0 +1,9 @@
+{
+  "keyMap" : {
+    "MOVE_LEFT" : "LEFT",
+    "MOVE_RIGHT" : "RIGHT",
+    "ROTATE" : "UP",
+    "DROP" : "DOWN",
+    "PAUSE" : "ESCAPE"
+  }
+}

@@ -1,0 +1,24 @@
+.vbox {
+    -fx-background-color: #33373B;
+}
+
+.text {
+    -fx-text-fill: white;
+}
+
+.custom-button {
+    -fx-background-color: #607d8b;
+    -fx-min-width: 270px;
+}
+
+.menu-button {
+    -fx-background-color: #EB765A;
+    -fx-background-radius: 10px;
+    -fx-min-height: 75px;
+    -fx-min-width: 300px;
+}
+
+.menu-vbox {
+    -fx-border-color:  #ffcd00;
+    -fx-border-width: 25px;
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootStackPane" maxHeight="914.0" maxWidth="845.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.deeps.postman.app.controller.SettingsController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="914.0" prefWidth="845.0" spacing="45.0" stylesheets="@/fxml/css/main.css">
+         <padding>
+            <Insets left="50.0" right="50.0" top="100.0" />
+         </padding>
+         <children>
+            <GridPane>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label styleClass="text" text="%settings" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Roboto" size="36.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="backButton" style="-fx-background-color: #90a4ae;" text="%back">
+                     <font>
+                        <Font name="Roboto" size="24.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="text" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </GridPane>
+            <JFXToggleButton fx:id="enablePriorityToggleButton" minWidth="230.0" styleClass="text" text="%enablePriority" toggleColor="#2ecc71" toggleLineColor="#27ae60" unToggleColor="#e74c3c" unToggleLineColor="#c0392b">
+               <font>
+                  <Font name="Roboto" size="24.0" />
+               </font>
+               <padding>
+                  <Insets top="-10.0" />
+               </padding>
+            </JFXToggleButton>
+            <JFXToggleButton fx:id="enableBalanceToggleButton" layoutX="307.0" layoutY="275.0" minWidth="230.0" styleClass="text" text="%enableBalance" toggleColor="#2ecc71" toggleLineColor="#27ae60" unToggleColor="#e74c3c" unToggleLineColor="#c0392b">
+               <font>
+                  <Font name="Roboto" size="24.0" />
+               </font>
+               <padding>
+                  <Insets top="-10.0" />
+               </padding>
+            </JFXToggleButton>
+            <JFXButton fx:id="moveLeftButton" text="%moveLeft">
+               <font>
+                  <Font name="Roboto" size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="custom-button" />
+                  <String fx:value="text" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="moveRightButton" text="%moveRight">
+               <font>
+                  <Font name="Roboto" size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="custom-button" />
+                  <String fx:value="text" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="dropButton" text="%drop">
+               <font>
+                  <Font name="Roboto" size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="custom-button" />
+                  <String fx:value="text" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="rotateButton" layoutX="361.0" layoutY="634.0" text="%rotate">
+               <font>
+                  <Font name="Roboto" size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="custom-button" />
+                  <String fx:value="text" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="pauseButton" layoutX="354.0" layoutY="759.0" text="%pauseGame">
+               <font>
+                  <Font name="Roboto" size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="custom-button" />
+                  <String fx:value="text" />
+               </styleClass>
+            </JFXButton>
+         </children>
+         <styleClass>
+            <String fx:value="vbox" />
+            <String fx:value="menu-vbox" />
+         </styleClass>
+      </VBox>
+   </children>
+</StackPane>

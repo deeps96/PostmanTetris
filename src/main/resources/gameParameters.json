@@ -1,0 +1,13 @@
+{
+  "deliveryWeightLimit": 10,
+  "gridWidth": 10,
+  "gridHeight": 20,
+  "pauseBetweenFallInMS": 500,
+  "userActionTimeoutInMS": 100,
+  "deliveryDroppedScore": 10,
+  "parcelRemovedScore": 5,
+  "enablePriority": true,
+  "balanceMinParcelCount": 24,
+  "balanceMaxDifferenceInPercent": 0.5,
+  "enableBalance": true
+}

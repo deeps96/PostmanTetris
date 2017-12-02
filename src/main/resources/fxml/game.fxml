@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.deeps.postman.game.view.BalanceCanvas?>
+<?import de.deeps.postman.game.view.PreviewCanvas?>
+<?import de.deeps.postman.game.view.TrunkCanvas?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootStackPane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.deeps.postman.game.controller.GameController">
+    <children>
+        <VBox fx:id="gameVBox" spacing="50.0" styleClass="vbox" stylesheets="@/fxml/css/main.css">
+            <children>
+                <HBox spacing="20.0">
+                    <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" spacing="50.0">
+                            <children>
+                                <Label styleClass="text" text="%next">
+                                    <font>
+                                        <Font name="Roboto Bold" size="36.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="75.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <PreviewCanvas fx:id="previewCanvas1" height="80.0" width="80.0" />
+                                <PreviewCanvas fx:id="previewCanvas2" height="80.0" layoutX="60.0" layoutY="179.0" width="80.0" />
+                                <PreviewCanvas fx:id="previewCanvas3" height="80.0" layoutX="60.0" layoutY="329.0" width="80.0" />
+                            </children>
+                        </VBox>
+                        <StackPane alignment="TOP_CENTER">
+                            <children>
+                                <ImageView fitHeight="835.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/images/truck.png" />
+                                    </image>
+                                </ImageView>
+                                <VBox alignment="TOP_CENTER" spacing="130.0">
+                                    <children>
+                                        <TrunkCanvas fx:id="trunkCanvas" height="700.0" width="350.0">
+                                            <VBox.margin>
+                                                <Insets left="-1.0" top="19.0" />
+                                            </VBox.margin>
+                                        </TrunkCanvas>
+                                        <BalanceCanvas fx:id="balanceCanvas" height="10.0" width="380.0">
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                        </BalanceCanvas>
+                                    </children>
+                                    <StackPane.margin>
+                                        <Insets />
+                                    </StackPane.margin>
+                                </VBox>
+                            </children>
+                        </StackPane>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Label styleClass="text" text="%score">
+                                    <font>
+                                        <Font name="Roboto Bold" size="36.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" top="75.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label fx:id="scoreLabel" styleClass="text" text="100">
+                                    <font>
+                                        <Font name="Roboto" size="36.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="50.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label layoutX="52.0" layoutY="20.0" styleClass="text" text="%timer">
+                                    <font>
+                                        <Font name="Roboto Bold" size="36.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label fx:id="timeLabel" styleClass="text" text="3:36">
+                                    <font>
+                                        <Font name="Roboto" size="36.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</StackPane>
